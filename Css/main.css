@@ -1,0 +1,62 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body{
+	background: url(../Img/Girls-Couple.jpg) no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.header{
+	width: 50%;
+}
+
+h1{
+	font-size: 4rem;
+	color: rgba(49, 40, 40, 0.803);
+	animation: animate 2.5s infinite;
+	margin: 0;
+	width: 150px;
+}
+
+@keyframes animate {
+	50%{
+		transform: translateX(500px);
+	}
+	65%{
+		transform: rotate(360deg);
+	}
+	
+	60%{
+		transform: scale(.2);
+		color: rgba(0, 0, 0, 0.527);
+	}
+	100%{
+		transform: scale(1);
+		color: rgba(255, 255, 255, 0.39);
+	}
+}
+
+.container{
+	width: 50%;
+	height: 300px;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+	backdrop-filter: blur(5px);
+}
+
+p{
+	color: rgba(255, 255, 255, 0.488);
+	text-align: justify;
+}
